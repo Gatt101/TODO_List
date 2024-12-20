@@ -1,0 +1,33 @@
+<nav class="d-flex flex-column bg-light border-end vh-100 p-3">
+    <div class="mb-4">
+      <h2 class="h5">My Todos</h2>
+    </div>
+  
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item mb-2">
+        <a routerLink="/all" routerLinkActive="active" class="nav-link d-flex align-items-center text-dark">
+          <i class="bi bi-list me-2"></i>
+          <span>All Tasks</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a routerLink="/today" routerLinkActive="active" class="nav-link d-flex align-items-center text-dark">
+          <i class="bi bi-calendar-day me-2"></i>
+          <span>Today</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a routerLink="/important" routerLinkActive="active" class="nav-link d-flex align-items-center text-dark">
+          <i class="bi bi-star me-2"></i>
+          <span>Important</span>
+        </a>
+      </li>
+    </ul>
+  
+    <div class="mt-auto">
+      <button class="btn btn-primary w-100 d-flex align-items-center justify-content-center" (click)="addNewTask()">
+        <i class="bi bi-plus me-2"></i> New Task
+      </button>
+    </div>
+  </nav>
+  
