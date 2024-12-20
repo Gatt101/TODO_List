@@ -1,0 +1,18 @@
+
+   <form [formGroup]="userForm" (ngSubmit)="submitTask()">
+    <div id="temp">
+        <label for="task"></label>
+        <input type="text"
+         id="task" 
+         name = "task"
+          formControlName="task"
+           placeholder="Enter a new Task">
+
+        <input type="time"
+         id="time" 
+         name = "time" 
+          formControlName="time">          
+           <button (click)="submitTask()" [disabled]="!userForm.valid" class="btn btn-primary" id="sub" >+</button>
+      </div>
+   </form>
+ 

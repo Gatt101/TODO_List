@@ -1,0 +1,44 @@
+#temp{
+    /* background-color: aqua; */
+    display: flex;
+    position: fixed;
+    bottom: 1px;
+    gap:5px;
+    height: 90vh;
+    align-items:end;
+}
+#task{
+    background-color: rgb(46, 46, 46);
+    position: relative;
+    color: white;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    justify-content: center;
+    left: 65%;
+    transition: 0.5s;
+}
+#task:hover{
+    transform: scale(1.08);
+}
+#time{
+    
+    background-color: rgb(38, 34, 34);
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    left: 66%;
+}
+#sub{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 67%;
+}
+btn btn-primary{
+    
+}
