@@ -1,4 +1,7 @@
-<div class="container">
-    <app-todo-list></app-todo-list>
-    <app-navbar></app-navbar>
-</div>
+<app-sidebar [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+(changeIsLeftSidebarCollapsed)="changeIsLeftSidebarCollapsed($event)"
+></app-sidebar>
+<app-main 
+    [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+    [screenWidth]="screenWidth()"
+></app-main>

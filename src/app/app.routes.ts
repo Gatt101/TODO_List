@@ -1,6 +1,16 @@
 import { Routes } from '@angular/router';
-import { TodoCreateComponent } from './component/todo/todo-create/todo-create.component';
+import { AboutComponent } from './component/about/about.component';
+import { ServicesComponent } from './component/services/services.component';
+import { TodoListComponent } from './component/todo/todo-list/todo-list.component';
+
 
 export const routes: Routes = [
-    {path:'',component:TodoCreateComponent}
+    {
+        path:'',redirectTo:'todo-list',pathMatch:'full',
+    },
+    {
+        path:'todo-list',component:TodoListComponent
+    },
+    {path:'about',component:AboutComponent},
+    {path:'services',component:ServicesComponent}
 ];
